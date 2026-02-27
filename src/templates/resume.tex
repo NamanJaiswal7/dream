@@ -1,0 +1,173 @@
+%-------------------------
+% Resume Template in LaTeX
+% Author: Naman Kumar
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% DOCUMENT STARTS HERE
+%-------------------------------------------
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \scshape {{NAME}}} \\ \vspace{1pt}
+    \small 
+    \faIcon{phone} {{PHONE}} ~ 
+    \href{mailto:{{EMAIL}}}{\faIcon{envelope} {{EMAIL}}} ~ 
+    \href{https://{{LINKEDIN}}}{\faIcon{linkedin} {{LINKEDIN}}} ~
+    \href{https://{{GITHUB}}}{\faIcon{github} {{GITHUB}}}
+    \vspace{-8pt}
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item[]
+    \small{{{SUMMARY}}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {{{EXP1_TITLE}}}{{{EXP1_DATES}}}
+      {{{EXP1_COMPANY}}}{{{EXP1_LOCATION}}}
+      \resumeItemListStart
+        {{EXP1_BULLETS}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {{{EXP2_TITLE}}}{{{EXP2_DATES}}}
+      {{{EXP2_COMPANY}}}{{{EXP2_LOCATION}}}
+      \resumeItemListStart
+        {{EXP2_BULLETS}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {{{EXP3_TITLE}}}{{{EXP3_DATES}}}
+      {{{EXP3_COMPANY}}}{{{EXP3_LOCATION}}}
+      \resumeItemListStart
+        {{EXP3_BULLETS}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{{{PROJ1_NAME}}} $|$ \emph{{{PROJ1_TECH}}}}{{{PROJ1_DATE}}}
+      \resumeItemListStart
+        {{PROJ1_BULLETS}}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{{{PROJ2_NAME}}} $|$ \emph{{{PROJ2_TECH}}}}{{{PROJ2_DATE}}}
+      \resumeItemListStart
+        {{PROJ2_BULLETS}}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: {{SKILLS_LANGUAGES}}} \\
+     \textbf{Frameworks}{: {{SKILLS_FRAMEWORKS}}} \\
+     \textbf{Cloud \& DevOps}{: {{SKILLS_CLOUD}}} \\
+     \textbf{Databases}{: {{SKILLS_DATABASES}}} \\
+     \textbf{Tools}{: {{SKILLS_TOOLS}}}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{{EDU1_INSTITUTION}}}{{{EDU1_LOCATION}}}
+      {{{EDU1_DEGREE}}}{{{EDU1_DATE}}}
+      \resumeItemListStart
+        {{EDU1_BULLETS}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

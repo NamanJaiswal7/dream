@@ -1,0 +1,237 @@
+%-------------------------
+% Resume Template in LaTeX
+% Author: Naman Kumar
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% CONSTANT INFORMATION - UPDATE THESE
+%-------------------------------------------
+\newcommand{\myName}{Naman Kumar}
+\newcommand{\myEmail}{namankumar.lt7@gmail.com}
+\newcommand{\myPhone}{+370603851}
+\newcommand{\myLinkedIn}{linkedin.com/in/namanjaiswal07}
+\newcommand{\myGitHub}{github.com/namanjaiswal7}
+\newcommand{\myLocation}{Vilnius, Lithuania}
+
+%-------------------------------------------
+% DOCUMENT STARTS HERE
+%-------------------------------------------
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\Huge \scshape \myName} \\ \vspace{1pt}
+    \small 
+    \faIcon{phone} \myPhone ~ 
+    \href{mailto:\myEmail}{\faIcon{envelope} \myEmail} ~ 
+    \href{https://\myLinkedIn}{\faIcon{linkedin} \myLinkedIn} ~
+    \href{https://\myGitHub}{\faIcon{github} \myGitHub}
+    \vspace{-8pt}
+\end{center}
+
+%----------SUMMARY----------
+\section{Summary}
+  \resumeSubHeadingListStart
+    \item[]
+    % === AI PLACEHOLDER: SUMMARY ===
+    % Generate a 2-3 sentence professional summary tailored to the job description
+    % highlighting relevant experience and key skills
+    \small{[AI-GENERATED SUMMARY: A compelling professional summary that highlights your most relevant experience, key technical skills, and career objectives aligned with the target job description. This should be 2-3 sentences that immediately capture the recruiter's attention.]}
+    % === END PLACEHOLDER ===
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % EXPERIENCE 1 - Company and title are constant
+    \resumeSubheading
+      {Senior Software Engineer}{Jan 2022 -- Present}
+      {Google}{Mountain View, CA}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: EXPERIENCE 1 BULLETS ===
+        % Generate 3-4 bullet points tailored to job description
+        \resumeItem{[AI-GENERATED: Describe a key achievement or responsibility that matches the target job requirements]}
+        \resumeItem{[AI-GENERATED: Highlight a technical accomplishment with measurable impact]}
+        \resumeItem{[AI-GENERATED: Describe leadership or collaboration experience relevant to the role]}
+        \resumeItem{[AI-GENERATED: Mention technologies used that align with job requirements]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+
+    % EXPERIENCE 2 - Company and title are constant
+    \resumeSubheading
+      {Software Engineer}{Jun 2019 -- Dec 2021}
+      {Amazon}{Seattle, WA}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: EXPERIENCE 2 BULLETS ===
+        \resumeItem{[AI-GENERATED: Describe a key achievement or responsibility]}
+        \resumeItem{[AI-GENERATED: Highlight a technical accomplishment with measurable impact]}
+        \resumeItem{[AI-GENERATED: Describe problem-solving or innovation relevant to the role]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+
+    % EXPERIENCE 3 - Company and title are constant
+    \resumeSubheading
+      {Software Engineering Intern}{May 2018 -- Aug 2018}
+      {Microsoft}{Redmond, WA}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: EXPERIENCE 3 BULLETS ===
+        \resumeItem{[AI-GENERATED: Describe internship project and achievements]}
+        \resumeItem{[AI-GENERATED: Highlight skills learned and impact made]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    % PROJECT 1 - Name is constant
+    \resumeProjectHeading
+      {\textbf{Dream Job Platform} $|$ \emph{Next.js, TypeScript, PostgreSQL, Redis}}{2023}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: PROJECT 1 DESCRIPTION ===
+        \resumeItem{[AI-GENERATED: Describe the project purpose and your role tailored to job requirements]}
+        \resumeItem{[AI-GENERATED: Highlight technical challenges solved and technologies used]}
+        \resumeItem{[AI-GENERATED: Include measurable outcomes or impact]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+
+    % PROJECT 2 - Name is constant
+    \resumeProjectHeading
+      {\textbf{Real-time Analytics Dashboard} $|$ \emph{React, Node.js, WebSocket, D3.js}}{2022}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: PROJECT 2 DESCRIPTION ===
+        \resumeItem{[AI-GENERATED: Describe the project and its relevance to the target role]}
+        \resumeItem{[AI-GENERATED: Highlight technical implementation details]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+
+    % PROJECT 3 - Name is constant
+    \resumeProjectHeading
+      {\textbf{ML-Powered Recommendation Engine} $|$ \emph{Python, TensorFlow, AWS Lambda}}{2021}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: PROJECT 3 DESCRIPTION ===
+        \resumeItem{[AI-GENERATED: Describe the ML project and algorithms used]}
+        \resumeItem{[AI-GENERATED: Include performance metrics and outcomes]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     % === AI PLACEHOLDER: SKILLS ===
+     % Reorder and emphasize skills based on job description requirements
+     \textbf{Languages}{: [AI-ORDERED: Prioritize languages mentioned in job description] JavaScript, TypeScript, Python, Java, Go, SQL} \\
+     \textbf{Frameworks}{: [AI-ORDERED: Prioritize frameworks mentioned in job description] React, Next.js, Node.js, Express, Django, Spring Boot} \\
+     \textbf{Cloud \& DevOps}{: [AI-ORDERED: Prioritize cloud skills mentioned in job description] AWS, GCP, Docker, Kubernetes, CI/CD, Terraform} \\
+     \textbf{Databases}{: [AI-ORDERED: Prioritize databases mentioned in job description] PostgreSQL, MongoDB, Redis, Elasticsearch} \\
+     \textbf{Tools}{: Git, GitHub Actions, Jira, Figma, DataDog}
+     % === END PLACEHOLDER ===
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Master of Science in Computer Science}{Aug 2017 -- May 2019}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: EDUCATION DETAILS ===
+        \resumeItem{[AI-GENERATED: Highlight relevant coursework matching job requirements]}
+        \resumeItem{[AI-GENERATED: Include GPA, honors, or relevant achievements if applicable]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of California, Berkeley}{Berkeley, CA}
+      {Bachelor of Science in Computer Science}{Aug 2013 -- May 2017}
+      \resumeItemListStart
+        % === AI PLACEHOLDER: EDUCATION DETAILS ===
+        \resumeItem{[AI-GENERATED: Include relevant activities, honors, or achievements]}
+        % === END PLACEHOLDER ===
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
