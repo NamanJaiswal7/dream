@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # Next.js Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - OLLAMA_URL=http://ollama:11434
+      - OLLAMA_MODEL=mistral
+    env_file:
+      - .env.local
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - dream-network
+
+  # Ollama LLM Server
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+    restart: unless-stopped
+    networks:
+      - dream-network
+
+  # Ollama Model Initializer (one-time setup)
+  ollama-init:
+    image: ollama/ollama:latest
+    depends_on:
+      ollama:
+        condition: service_healthy
+    volumes:
+      - ollama-data:/root/.ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - |
+        echo "Pulling Mistral model..."
+        OLLAMA_HOST=http://ollama:11434 ollama pull mistral
+        echo "Model ready!"
+    networks:
+      - dream-network
+
+networks:
+  dream-network:
+    driver: bridge
+
+volumes:
+  ollama-data:
+    driver: local
