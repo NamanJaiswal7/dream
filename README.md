@@ -35,7 +35,7 @@ Make sure you have the following installed before starting:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:NamanJaiswal7/dream.git
 cd dream
 ```
 
